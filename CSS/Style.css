@@ -376,6 +376,14 @@ nav {
 
 @media (max-width: 420px) {
   .DivPrin {
-    display: block; /* fuerza columna */
+    display: block;
+  }
+  .service-text {
+    text-align: center;
+  }
+
+  .service-text a {
+    display: inline-block;
+    margin: 0 auto;
   }
 }
