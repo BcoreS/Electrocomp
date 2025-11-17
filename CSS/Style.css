@@ -73,47 +73,46 @@ nav {
     margin: 4px;
   }
 }
+/* Forzar navbar en una sola línea y evitar WRAP */
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap !important; /* ← ESTO ES CLAVE */
+}
 
-/* Móviles pequeños */
-@media (max-width: 400px) {
-  .container-fluid {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 6px;
-  }
+/* Barra de búsqueda siempre en la misma línea */
+.search-bar {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 6px;
+  max-width: 70%; /* Ajustable */
+  min-width: 0; /* ← evita que empuje a los demás */
+}
 
-  .search-bar {
-    flex: 1 1 auto;
-    display: flex;
-    gap: 4px;
-    flex-shrink: 1;
-    max-width: 60%; /* Este valor evita el wrap */
-  }
-
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
   .search-bar input {
     flex: 1 1 auto;
-    min-width: 50px;
-    max-width: 80px; /* Límite real */
+    min-width: 40px;
     font-size: 0.75rem;
-    padding: 2px 4px;
+    padding: 3px 5px;
   }
 
   .search-bar button {
     font-size: 0.75rem;
-    padding: 2px 6px;
+    padding: 3px 6px;
     white-space: nowrap;
-  }
-
-  .navbar-toggler {
-    flex-shrink: 0;
   }
 }
 
-/* Móviles MUY pequeños */
 @media (max-width: 360px) {
+  .search-bar {
+    max-width: 58%;
+  }
+
   .search-bar input {
-    max-width: 60px; /* aún más compacto */
+    max-width: 55px;
   }
 
   .search-bar button {
