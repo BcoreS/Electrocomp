@@ -44,8 +44,10 @@ header::before {
     max-width: 250px;
   }
 }
-
 /* Navbar */
+
+/*Diseño del NAVBAR*/
+
 nav {
   background-image: url("../Resources/FondoMontañas.jpg");
   background-size: cover;
@@ -54,7 +56,7 @@ nav {
 .listaNav li a {
   color: white;
 }
-/* Navbar colapsado estilos */
+
 @media (max-width: 991px) {
   #mainNavbar .navbar-nav {
     text-align: center;
@@ -66,63 +68,64 @@ nav {
     margin: 4px 0;
     padding: 10px 12px;
   }
+
   #mainNavbar .dropdown-menu .dropdown-item {
     background: rgba(0, 0, 0, 0.4);
     color: #fff !important;
     border-radius: 6px;
     margin: 4px;
   }
-}
-/* Forzar navbar en una sola línea y evitar WRAP */
-.navbar .container-fluid {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap !important; /* ← ESTO ES CLAVE */
+
+  #mainNavbar .nav-link:hover,
+  #mainNavbar .dropdown-menu .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  #mainNavbar .dropdown-toggle {
+    background: rgba(0, 0, 0, 0.4) !important;
+    border-radius: 8px;
+  }
+
+  #mainNavbar .dropdown-toggle.show {
+    background: rgba(0, 0, 0, 0.6) !important;
+  }
 }
 
-/* Barra de búsqueda siempre en la misma línea */
-.search-bar {
-  display: flex;
-  flex: 1 1 auto;
-  gap: 6px;
-  max-width: 70%; /* Ajustable */
-  min-width: 0; /* ← evita que empuje a los demás */
-}
+/* Pantallas muy pequeñas (menos de 400px) */
+@media (max-width: 400px) {
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 480px) {
+  /* Formulario compacto */
+  .search-bar {
+    display: flex;
+    flex: 1 1 auto; /* ocupa el espacio disponible */
+    align-items: center;
+    margin-right: 5px; /* separación del toggler */
+  }
+
   .search-bar input {
-    flex: 1 1 auto;
-    min-width: 40px;
-    font-size: 0.75rem;
-    padding: 3px 5px;
+    flex: 1 1 50px; /* ocupa solo parte del espacio */
+    min-width: 30px; /* no muy pequeño */
+    font-size: 0.7rem; /* más compacto */
+    padding: 2px 4px;
   }
 
   .search-bar button {
-    font-size: 0.75rem;
-    padding: 3px 6px;
-    white-space: nowrap;
-  }
-}
-@media (max-width: 360px) {
-  .search-bar {
-    max-width: 65%; /* Un poco más ancho */
-    gap: 4px; /* Más compacto */
-  }
-
-  .search-bar input {
-    flex: 1 1 auto; /* Que se ajuste al espacio disponible */
-    min-width: 50px; /* Sin hacerse ultra pequeño */
-    max-width: none; /* Quitar restricción problemática */
+    flex: 0 0 auto; /* no se reduce demasiado */
     font-size: 0.7rem;
     padding: 2px 4px;
+    margin-left: 2px;
   }
 
-  .search-bar button {
-    font-size: 0.65rem;
-    padding: 2px 4px;
-    white-space: nowrap;
+  /* Navbar toggler siempre visible */
+  .navbar-toggler {
+    flex-shrink: 0;
+    padding: 0.25rem 0.5rem;
   }
 }
 
