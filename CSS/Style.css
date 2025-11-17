@@ -90,6 +90,7 @@ nav {
   }
 }
 
+/* Pantallas muy pequeñas (menos de 400px) */
 @media (max-width: 400px) {
   .container-fluid {
     display: flex;
@@ -98,28 +99,32 @@ nav {
     flex-wrap: nowrap;
   }
 
+  /* Formulario compacto */
   .search-bar {
-    flex: 1 1 auto;
     display: flex;
+    flex: 1 1 auto; /* ocupa el espacio disponible */
     align-items: center;
-    margin-right: 5px;
+    margin-right: 5px; /* separación del toggler */
   }
 
   .search-bar input {
-    flex: 1 1 auto;
-    min-width: 50px;
+    flex: 1 1 50px; /* ocupa solo parte del espacio */
+    min-width: 30px; /* no muy pequeño */
+    font-size: 0.7rem; /* más compacto */
     padding: 2px 4px;
-    font-size: 0.8rem;
   }
 
   .search-bar button {
-    flex: 0 0 auto;
-    padding: 2px 6px;
-    font-size: 0.8rem;
+    flex: 0 0 auto; /* no se reduce demasiado */
+    font-size: 0.7rem;
+    padding: 2px 4px;
+    margin-left: 2px;
   }
 
+  /* Navbar toggler siempre visible */
   .navbar-toggler {
     flex-shrink: 0;
+    padding: 0.25rem 0.5rem;
   }
 }
 
