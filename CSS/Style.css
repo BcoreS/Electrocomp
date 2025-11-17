@@ -1,5 +1,16 @@
-/*Diseño del HEADER*/
+/* ==================================================
+   VARIABLES (Opcional, para facilitar cambios futuros)
+   ================================================== */
+:root {
+  --primary-color: #007bff;
+  --primary-color-dark: #0056b3;
+  --overlay-dark: rgba(0, 0, 0, 0.45);
+  --overlay-light: rgba(255, 255, 255, 0.2);
+}
 
+/* ==================================================
+   HEADER
+   ================================================== */
 header {
   background-image: url("../Resources/CubosExtrañosTecho.jpg");
   background-size: cover;
@@ -18,10 +29,12 @@ header::before {
   height: 100%;
   background: rgba(20, 19, 19, 0.5);
 }
+
 .header-content {
   position: relative;
   z-index: 2;
 }
+
 .header-logo {
   width: 100%;
   max-width: 350px;
@@ -29,6 +42,7 @@ header::before {
   border-radius: 100px;
   border-style: outset;
 }
+
 .lead {
   font-weight: bolder;
   font-size: 1.5rem;
@@ -39,15 +53,14 @@ header::before {
   .lead {
     font-size: 0.9rem;
   }
-
   .header-logo {
     max-width: 250px;
   }
 }
-/* Navbar */
 
-/*Diseño del NAVBAR*/
-
+/* ==================================================
+   NAVBAR
+   ================================================== */
 nav {
   background-image: url("../Resources/FondoMontañas.jpg");
   background-size: cover;
@@ -57,16 +70,23 @@ nav {
   color: white;
 }
 
+/* Media query para navbar responsive */
 @media (max-width: 991px) {
   #mainNavbar .navbar-nav {
     text-align: center;
     width: 100%;
   }
-  #mainNavbar .nav-link {
+
+  #mainNavbar .nav-link,
+  #mainNavbar .dropdown-toggle {
     background: rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     margin: 4px 0;
     padding: 10px 12px;
+  }
+
+  #mainNavbar .dropdown-toggle.show {
+    background: rgba(0, 0, 0, 0.6);
   }
 
   #mainNavbar .dropdown-menu .dropdown-item {
@@ -78,20 +98,11 @@ nav {
 
   #mainNavbar .nav-link:hover,
   #mainNavbar .dropdown-menu .dropdown-item:hover {
-    background: rgba(255, 255, 255, 0.2);
-  }
-
-  #mainNavbar .dropdown-toggle {
-    background: rgba(0, 0, 0, 0.4) !important;
-    border-radius: 8px;
-  }
-
-  #mainNavbar .dropdown-toggle.show {
-    background: rgba(0, 0, 0, 0.6) !important;
+    background: var(--overlay-light);
   }
 }
 
-/* Pantallas muy pequeñas (menos de 400px) */
+/* Navbar para pantallas muy pequeñas */
 @media (max-width: 420px) {
   .container-fluid {
     display: flex;
@@ -100,127 +111,154 @@ nav {
     flex-wrap: nowrap;
   }
 
-  /* Formulario compacto */
   .search-bar {
     display: flex;
-    flex: 1 1 auto; /* ocupa el espacio disponible */
+    flex: 1 1 auto;
     align-items: center;
-    margin-right: 5px; /* separación del toggler */
+    margin-right: 5px;
   }
 
   .search-bar input {
-    flex: 1 1 50px; /* ocupa solo parte del espacio */
-    min-width: 30px; /* no muy pequeño */
-    font-size: 0.7rem; /* más compacto */
+    flex: 1 1 50px;
+    min-width: 30px;
+    font-size: 0.7rem;
     padding: 2px 4px;
   }
 
   .search-bar button {
-    flex: 0 0 auto; /* no se reduce demasiado */
+    flex: 0 0 auto;
     font-size: 0.7rem;
     padding: 2px 4px;
     margin-left: 2px;
   }
 
-  /* Navbar toggler siempre visible */
   .navbar-toggler {
     flex-shrink: 0;
     padding: 0.25rem 0.5rem;
   }
 }
 
-/*Carousel*/
-
+/* ==================================================
+   CAROUSEL
+   ================================================== */
 .carousel-item .carousel-caption {
-  top: 50% !important;
-  bottom: auto !important;
+  top: 50%;
+  bottom: auto;
   transform: translateY(-50%);
+  text-align: center;
+  z-index: 2;
 }
 
-.carousel1::before {
+#header-carousel .carousel-item::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.45);
+  background: var(--overlay-dark);
   z-index: 1;
-}
-
-.carousel-caption {
-  position: absolute;
-  z-index: 2 !important;
 }
 
 @media (max-width: 768px) {
   #header-carousel .carousel-caption h1 {
-    font-size: 2rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 1rem !important;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
   }
 
   #header-carousel .carousel-caption a.btn {
-    padding: 8px 16px !important;
-    font-size: 0.9rem !important;
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 
   #header-carousel .carousel-caption {
-    top: 50%;
-    transform: translateY(-50%);
     padding: 0 20px;
   }
 }
 
 @media (max-width: 480px) {
   #header-carousel .carousel-caption h1 {
-    font-size: 1.3rem !important;
+    font-size: 1.3rem;
   }
 }
-/*Diseño divPrincipal*/
+
+/* Control de flechas carousel */
+#header-carousel .carousel-control-prev {
+  left: calc((100vw - 1320px) / 2);
+}
+#header-carousel .carousel-control-next {
+  right: calc((100vw - 1320px) / 2);
+}
+
+@media (max-width: 1400px) {
+  #header-carousel .carousel-control-prev {
+    left: 10px;
+  }
+  #header-carousel .carousel-control-next {
+    right: 10px;
+  }
+}
+
+#header-carousel .carousel-control-prev-icon,
+#header-carousel .carousel-control-next-icon {
+  background-size: 100% 100%;
+}
+
+/* ==================================================
+   OFERTAS / DIV PRINCIPAL
+   ================================================== */
 .DivPrin {
   font-family: "Roboto", sans-serif;
-  max-width: 1600px; /* Ajusta el ancho máximo */
-  width: 100%; /* Mantén responsive */
-  margin: 0 auto; /* Centra el contenedor */
-  background-color: rgb(255, 255, 255);
-  /* Quitar overflow-x para evitar scroll innecesario */
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 #ofertasCarousel .carousel-inner .row {
-  flex-wrap: wrap; /* Permite que las tarjetas bajen si no caben */
-  justify-content: center; /* Centra las tarjetas */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .oferta-card {
   transition: transform 0.5s ease, box-shadow 0.8s ease;
-  width: 300px; /* Tamaño fijo para cada tarjeta */
+  width: 300px;
   margin: 0 auto;
 }
 
 .oferta-card img {
-  width: 100%; /* Ocupa todo el ancho de la tarjeta */
-  height: 250px; /* Alto fijo */
-  object-fit: cover; /* Recorta sin deformar */
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
   border-radius: 8px;
   display: block;
   background-color: #fff;
 }
 
 .oferta-card:hover {
-  transform: translateY(-10px); /* lo levanta */
+  transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-  color: #fff;
+#ofertasCarousel .carousel-control-prev {
+  left: 10px;
+}
+#ofertasCarousel .carousel-control-next {
+  right: 10px;
 }
 
-.NoveCar {
-  height: 750px;
-  max-height: 1000px;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100% 100%;
+  width: 30px;
+  height: 30px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
 }
 
+/* ==================================================
+   SERVICES GRID
+   ================================================== */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -253,7 +291,7 @@ footer {
 .btn-more {
   display: inline-block;
   padding: 8px 16px;
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: #fff;
   border-radius: 6px;
   text-decoration: none;
@@ -261,32 +299,29 @@ footer {
 }
 
 .btn-more:hover {
-  background-color: #0056b3;
+  background-color: var(--primary-color-dark);
 }
 
-.carousel-control-prev {
-  left: -90px; /* Ajusta según tu diseño */
+@media (max-width: 980px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-img img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
 }
 
-/* Flecha derecha fuera */
-.carousel-control-next {
-  right: -90px; /* Ajusta según tu diseño */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-size: 100%, 100%;
-  width: 30px;
-  height: 30px;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg); /* Blanco */
-}
-
+/* ==================================================
+   TITULOS Y SECCIONES
+   ================================================== */
 .DivPrin .section-title {
-  font-size: 2.8rem; /* Más grande */
-  font-weight: 800; /* Más grueso */
-  text-transform: uppercase; /* Mayúsculas */
-  color: #007bff; /* Color corporativo */
-  letter-spacing: 1px; /* Espaciado entre letras */
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  letter-spacing: 1px;
   margin-bottom: 0.5rem;
   position: relative;
   display: inline-block;
@@ -298,7 +333,7 @@ footer {
   position: absolute;
   width: 180px;
   height: 4px;
-  background-color: #007bff;
+  background-color: var(--primary-color);
   bottom: -0.1px;
   left: 50%;
   transform: translateX(-50%);
@@ -311,17 +346,6 @@ footer {
   margin-top: 1rem;
   margin-bottom: 5px;
   padding-left: 15px;
-}
-
-@media (max-width: 980px) {
-  .services-grid {
-    grid-template-columns: 1fr; /* Una sola columna */
-  }
-  .service-img img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-  }
 }
 
 .tituloOferta {
