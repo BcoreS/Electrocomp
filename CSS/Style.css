@@ -137,10 +137,11 @@ nav {
     padding: 0.25rem 0.5rem;
   }
 }
-
 /* ==================================================
    CAROUSEL
    ================================================== */
+
+/* Pantallas grandes: centrado vertical elegante */
 .carousel-item .carousel-caption {
   top: 50%;
   bottom: auto;
@@ -149,6 +150,7 @@ nav {
   z-index: 2;
 }
 
+/* Overlay oscuro del carousel */
 #header-carousel .carousel-item::before {
   content: "";
   position: absolute;
@@ -160,26 +162,46 @@ nav {
   z-index: 1;
 }
 
+/* ==================================================
+   PANTALLAS MEDIANAS / TABLETS
+   ================================================== */
 @media (max-width: 768px) {
-  #header-carousel .carousel-caption h1 {
-    font-size: 2rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-  }
-
-  #header-carousel .carousel-caption a.btn {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-  }
-
-  #header-carousel .carousel-caption {
+  /* ❗ Quitar centrado vertical que causa espacios gigantes */
+  .carousel-item .carousel-caption {
+    top: auto;
+    bottom: 15%;
+    transform: none;
     padding: 0 20px;
+  }
+
+  /* Título más pequeño y con menos espacio abajo */
+  #header-carousel .carousel-caption h1 {
+    font-size: 1.7rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  /* Botón más compacto */
+  #header-carousel .carousel-caption a.btn {
+    padding: 8px 16px !important;
+    font-size: 0.9rem !important;
+    margin-top: 0 !important;
   }
 }
 
+/* ==================================================
+   TELÉFONOS PEQUEÑOS
+   ================================================== */
 @media (max-width: 480px) {
+  /* Ajustar posición para pantallas realmente pequeñas */
+  .carousel-item .carousel-caption {
+    bottom: 10%;
+  }
+
+  /* Título más compacto */
   #header-carousel .carousel-caption h1 {
-    font-size: 1.3rem;
+    font-size: 1.3rem !important;
+    margin-bottom: 0.4rem !important;
   }
 }
 
