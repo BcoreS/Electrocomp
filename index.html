@@ -12,21 +12,94 @@
     <link rel="stylesheet" href="CSS/Style.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="text-center text-light">
       <div class="container header-content">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Circle-icons-computer.svg"
+          src="Resources/LogoElectrocomp.png"
           class="header-logo mb-3"
           alt="Electrocomp Logo"
         />
-        <h1 class="display-4 fw-bold">Electrocomp</h1>
-        <p class="lead">
-          PCs de segunda mano | Servicios técnicos | Periféricos
-        </p>
+        <div class="infoH">
+          <p class="lead">
+            Reparación experta, tecnología renovada. ¡Tu solución total en PC y
+            periféricos!.
+          </p>
+        </div>
       </div>
     </header>
+    <!-- Navbar -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top"
+    >
+      <div class="container">
+        <form class="d-flex search-bar" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder=""
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 listaNav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="acerca.html">Acerca</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Servicios</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="pcs.html"
+                    >PCs de segunda mano</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="perifericos.html"
+                    >Periféricos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="servicios-tecnicos.html"
+                    >Servicios técnicos</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="otros.html">Otros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- Bootstrap JS -->
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/JSPropio.js"></script>
   </body>
 </html>
