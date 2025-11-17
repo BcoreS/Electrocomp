@@ -31,11 +31,21 @@
       </div>
     </header>
     <!-- Navbar -->
-
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top"
     >
       <div class="container-fluid">
+        <!-- Toggler siempre primero -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Formulario de búsqueda -->
         <form class="d-flex search-bar" role="search">
           <input
             class="form-control me-2"
@@ -46,15 +56,7 @@
           <button class="btn btn-outline-light" type="submit">Buscar</button>
         </form>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
+        <!-- Menú -->
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 listaNav">
             <li class="nav-item">
@@ -67,11 +69,7 @@
               <a class="nav-link" href="acerca.html">Acerca</a>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
                 >Servicios</a
               >
               <ul class="dropdown-menu dropdown-menu-dark">
@@ -159,108 +157,118 @@
         </button>
       </div>
     </div>
-     <!--Div Principal-->
+    <!--Div Principal-->
 
-<DIV class="container-fluid DivPrin">
-      
-<div class="title-wrapper">
-    <h3 class="section-title">Ofertas</h3>
-    <p class="section-subtitle">Descubre las mejores promociones y productos destacados</p>
-</div>
+    <div class="container-fluid DivPrin">
+      <div class="title-wrapper">
+        <h3 class="section-title tituloOferta">Ofertas</h3>
+        <p class="section-subtitle">
+          Descubre las mejores promociones y productos destacados
+        </p>
+      </div>
 
-    
-<div id="ofertasCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
+      <div id="ofertasCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="services-grid">
+              <article class="service-item">
+                <div class="service-img">
+                  <img src="Resources/Oferta1.jpg" />
+                </div>
+                <div class="service-text">
+                  <h4>PC-1</h4>
+                  <p>
+                    Computadora de alto rendimiento ideal para gaming y diseño.
+                  </p>
+                  <a href="#" class="us"> Ver más</a>
+                </div>
+              </article>
 
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-      <div class="services-grid">
-        <article class="service-item">
-          <div class="service-img">
-            <img src="Resources/Oferta1.jpg">
-          </div>
-          <div class="service-text">
-            <h4>PC-1</h4>
-            <p>Computadora de alto rendimiento ideal para gaming y diseño.</p>
-            <a href="#" class="us"></i> Ver más</a>
-          </div>
-        </article>
+              <article class="service-item">
+                <div class="service-img">
+                  <img src="Resources/Oferta2.jpg" />
+                </div>
+                <div class="service-text">
+                  <h4>PC-2</h4>
+                  <p>Laptop ultraligera con batería de larga duración.</p>
+                  <a href="#" class="us"> Ver más</a>
+                </div>
+              </article>
 
-        <article class="service-item">
-          <div class="service-img">
-            <img src="Resources/Oferta2.jpg">
+              <article class="service-item">
+                <div class="service-img">
+                  <img src="Resources/Oferta3.jpg" />
+                </div>
+                <div class="service-text">
+                  <h4>PC-3</h4>
+                  <p>Monitor Full HD para una experiencia visual increíble.</p>
+                  <a href="#" class="us"> Ver más</a>
+                </div>
+              </article>
+            </div>
           </div>
-          <div class="service-text">
-            <h4>PC-2</h4>
-            <p>Laptop ultraligera con batería de larga duración.</p>
-            <a href="#" class="us"></i> Ver más</a>
-          </div>
-        </article>
 
-        <article class="service-item">
-          <div class="service-img">
-            <img src="Resources/Oferta3.jpg">
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="services-grid">
+              <article class="service-item">
+                <div class="service-img">
+                  <img src="Resources/Oferta4.jpg" />
+                </div>
+                <div class="service-text">
+                  <h4>PC-1</h4>
+                  <p>
+                    Computadora de alto rendimiento ideal para gaming y diseño.
+                  </p>
+                  <a href="#" class="us"> Ver más</a>
+                </div>
+              </article>
+
+              <article class="service-item">
+                <div class="service-img">
+                  <img src="Resources/Oferta5.jpg" />
+                </div>
+                <div class="service-text">
+                  <h4>PC-2</h4>
+                  <p>Laptop ultraligera con batería de larga duración.</p>
+                  <a href="#" class="us">Ver más</a>
+                </div>
+              </article>
+
+              <article class="service-item">
+                <div class="service-img">
+                  <img src="Resources/Oferta6.jpg" />
+                </div>
+                <div class="service-text">
+                  <h4>PC-3</h4>
+                  <p>Monitor Full HD para una experiencia visual increíble.</p>
+                  <a href="#" class="us"> Ver más</a>
+                </div>
+              </article>
+            </div>
           </div>
-          <div class="service-text">
-            <h4>PC-3</h4>
-            <p>Monitor Full HD para una experiencia visual increíble.</p>
-            <a href="#" class="us"></i> Ver más</a>
-          </div>
-        </article>
+        </div>
+
+        <!-- Botones -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#ofertasCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#ofertasCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
     </div>
-
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <div class="services-grid">
-        <article class="service-item">
-          <div class="service-img">
-            <img src="Resources/Oferta4.jpg">
-          </div>
-          <div class="service-text">
-            <h4>PC-1</h4>
-            <p>Computadora de alto rendimiento ideal para gaming y diseño.</p>
-            <a href="#" class="us"></i> Ver más</a>
-          </div>
-        </article>
-
-        <article class="service-item">
-          <div class="service-img">
-            <img src="Resources/Oferta5.jpg">
-          </div>
-          <div class="service-text">
-            <h4>PC-2</h4>
-            <p>Laptop ultraligera con batería de larga duración.</p>
-            <a href="#" class="us"></i> Ver más</a>
-          </div>
-        </article>
-
-        <article class="service-item">
-          <div class="service-img">
-            <img src="Resources/Oferta6.jpg">
-          </div>
-          <div class="service-text">
-            <h4>PC-3</h4>
-            <p>Monitor Full HD para una experiencia visual increíble.</p>
-            <a href="#" class="us"></i> Ver más</a>
-          </div>
-        </article>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Botones -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#ofertasCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#ofertasCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
-
-</DIV>
-
 
     <!-- Bootstrap JS -->
     <script src="JS/bootstrap.bundle.min.js"></script>

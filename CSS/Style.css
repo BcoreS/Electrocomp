@@ -44,9 +44,7 @@ header::before {
     max-width: 250px;
   }
 }
-
-/*Diseño del NAVBAR*/
-
+/* Fondo */
 nav {
   background-image: url("../Resources/FondoMontañas.jpg");
   background-size: cover;
@@ -56,6 +54,7 @@ nav {
   color: white;
 }
 
+/* Navbar colapsado estilos */
 @media (max-width: 991px) {
   #mainNavbar .navbar-nav {
     text-align: center;
@@ -67,64 +66,44 @@ nav {
     margin: 4px 0;
     padding: 10px 12px;
   }
-
   #mainNavbar .dropdown-menu .dropdown-item {
     background: rgba(0, 0, 0, 0.4);
     color: #fff !important;
     border-radius: 6px;
     margin: 4px;
   }
-
-  #mainNavbar .nav-link:hover,
-  #mainNavbar .dropdown-menu .dropdown-item:hover {
-    background: rgba(255, 255, 255, 0.2);
-  }
-
-  #mainNavbar .dropdown-toggle {
-    background: rgba(0, 0, 0, 0.4) !important;
-    border-radius: 8px;
-  }
-
-  #mainNavbar .dropdown-toggle.show {
-    background: rgba(0, 0, 0, 0.6) !important;
-  }
 }
 
-/* Pantallas muy pequeñas (menos de 400px) */
+/* Teléfonos MUY pequeños (<400px) */
 @media (max-width: 400px) {
   .container-fluid {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    gap: 6px;
   }
 
-  /* Formulario compacto */
   .search-bar {
+    flex: 1 1 auto;
     display: flex;
-    flex: 1 1 auto; /* ocupa el espacio disponible */
-    align-items: center;
-    margin-right: 5px; /* separación del toggler */
+    gap: 4px;
   }
 
   .search-bar input {
-    flex: 1 1 50px; /* ocupa solo parte del espacio */
-    min-width: 30px; /* no muy pequeño */
-    font-size: 0.7rem; /* más compacto */
-    padding: 2px 4px;
+    flex: 1 1 auto;
+    min-width: 50px;
+    font-size: 0.75rem;
+    padding: 3px 4px;
   }
 
   .search-bar button {
-    flex: 0 0 auto; /* no se reduce demasiado */
-    font-size: 0.7rem;
-    padding: 2px 4px;
-    margin-left: 2px;
+    font-size: 0.75rem;
+    padding: 3px 6px;
+    white-space: nowrap;
   }
 
-  /* Navbar toggler siempre visible */
   .navbar-toggler {
     flex-shrink: 0;
-    padding: 0.25rem 0.5rem;
   }
 }
 
@@ -178,46 +157,46 @@ nav {
 }
 /*Diseño divPrincipal*/
 .DivPrin {
-    font-family: "Roboto", sans-serif;
-    max-width: 1600px;      /* Ajusta el ancho máximo */
-    width: 100%;             /* Mantén responsive */
-    margin: 0 auto;         /* Centra el contenedor */
-    background-color: rgb(255, 255, 255);
-    /* Quitar overflow-x para evitar scroll innecesario */
+  font-family: "Roboto", sans-serif;
+  max-width: 1600px; /* Ajusta el ancho máximo */
+  width: 100%; /* Mantén responsive */
+  margin: 0 auto; /* Centra el contenedor */
+  background-color: rgb(255, 255, 255);
+  /* Quitar overflow-x para evitar scroll innecesario */
 }
 
 #ofertasCarousel .carousel-inner .row {
-    flex-wrap: wrap;        /* Permite que las tarjetas bajen si no caben */
-    justify-content: center;/* Centra las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas bajen si no caben */
+  justify-content: center; /* Centra las tarjetas */
 }
 
 .oferta-card {
-    transition: transform 0.5s ease, box-shadow 0.8s ease;
-    width: 300px;           /* Tamaño fijo para cada tarjeta */
-    margin: 0 auto;
+  transition: transform 0.5s ease, box-shadow 0.8s ease;
+  width: 300px; /* Tamaño fijo para cada tarjeta */
+  margin: 0 auto;
 }
 
 .oferta-card img {
-    width: 100%;            /* Ocupa todo el ancho de la tarjeta */
-    height: 250px;          /* Alto fijo */
-    object-fit: cover;      /* Recorta sin deformar */
-    border-radius: 8px;
-    display: block;
-    background-color: #fff;
+  width: 100%; /* Ocupa todo el ancho de la tarjeta */
+  height: 250px; /* Alto fijo */
+  object-fit: cover; /* Recorta sin deformar */
+  border-radius: 8px;
+  display: block;
+  background-color: #fff;
 }
 
-.oferta-card:hover{
- transform: translateY(-10px); /* lo levanta */
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+.oferta-card:hover {
+  transform: translateY(-10px); /* lo levanta */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-footer{
-    color: #fff;
+footer {
+  color: #fff;
 }
 
-.NoveCar{
-    height: 750px;
-    max-height: 1000px;
+.NoveCar {
+  height: 750px;
+  max-height: 1000px;
 }
 
 .services-grid {
@@ -231,7 +210,7 @@ footer{
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -262,56 +241,54 @@ footer{
 .btn-more:hover {
   background-color: #0056b3;
 }
- 
 
 .carousel-control-prev {
-    left: -90px; /* Ajusta según tu diseño */
+  left: -90px; /* Ajusta según tu diseño */
 }
 
 /* Flecha derecha fuera */
 .carousel-control-next {
-    right: -90px; /* Ajusta según tu diseño */
+  right: -90px; /* Ajusta según tu diseño */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-size: 100%, 100%;
-    width: 30px;
-    height: 30px;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg); /* Blanco */
-
+  background-size: 100%, 100%;
+  width: 30px;
+  height: 30px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg); /* Blanco */
 }
 
 .DivPrin .section-title {
-    font-size: 2.8rem;           /* Más grande */
-    font-weight: 800;            /* Más grueso */
-    text-transform: uppercase;   /* Mayúsculas */
-    color: #007bff;              /* Color corporativo */
-    letter-spacing: 1px;         /* Espaciado entre letras */
-    margin-bottom: 0.5rem;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 15px;
+  font-size: 2.8rem; /* Más grande */
+  font-weight: 800; /* Más grueso */
+  text-transform: uppercase; /* Mayúsculas */
+  color: #007bff; /* Color corporativo */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
 }
 
 .DivPrin .section-title::after {
-    content: "";
-    position: absolute;
-    width: 180px;
-    height: 4px;
-    background-color: #007bff;
-    bottom: -0.1px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 4px;
+  background-color: #007bff;
+  bottom: -0.1px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
 }
 
 .section-subtitle {
-    font-size: 1.2rem;
-    color: #555;
-    margin-top: 1rem;
-    margin-bottom: 5px;
-    padding-left: 15px;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 1rem;
+  margin-bottom: 5px;
+  padding-left: 15px;
 }
 
 @media (max-width: 980px) {
@@ -319,8 +296,12 @@ footer{
     grid-template-columns: 1fr; /* Una sola columna */
   }
   .service-img img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
   }
+}
+
+.tituloOferta {
+  padding-top: 2rem;
 }
