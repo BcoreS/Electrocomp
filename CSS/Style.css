@@ -44,7 +44,8 @@ header::before {
     max-width: 250px;
   }
 }
-/* Fondo */
+
+/* Navbar */
 nav {
   background-image: url("../Resources/FondoMontañas.jpg");
   background-size: cover;
@@ -53,7 +54,6 @@ nav {
 .listaNav li a {
   color: white;
 }
-
 /* Navbar colapsado estilos */
 @media (max-width: 991px) {
   #mainNavbar .navbar-nav {
@@ -74,7 +74,7 @@ nav {
   }
 }
 
-/* Teléfonos MUY pequeños (<400px) */
+/* Móviles pequeños */
 @media (max-width: 400px) {
   .container-fluid {
     display: flex;
@@ -87,23 +87,38 @@ nav {
     flex: 1 1 auto;
     display: flex;
     gap: 4px;
+    flex-shrink: 1;
+    max-width: 60%; /* Este valor evita el wrap */
   }
 
   .search-bar input {
     flex: 1 1 auto;
     min-width: 50px;
+    max-width: 80px; /* Límite real */
     font-size: 0.75rem;
-    padding: 3px 4px;
+    padding: 2px 4px;
   }
 
   .search-bar button {
     font-size: 0.75rem;
-    padding: 3px 6px;
+    padding: 2px 6px;
     white-space: nowrap;
   }
 
   .navbar-toggler {
     flex-shrink: 0;
+  }
+}
+
+/* Móviles MUY pequeños */
+@media (max-width: 360px) {
+  .search-bar input {
+    max-width: 60px; /* aún más compacto */
+  }
+
+  .search-bar button {
+    font-size: 0.65rem;
+    padding: 2px 4px;
   }
 }
 
