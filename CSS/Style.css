@@ -105,19 +105,24 @@ nav {
     white-space: nowrap;
   }
 }
-
 @media (max-width: 360px) {
   .search-bar {
-    max-width: 58%;
+    max-width: 65%; /* Un poco más ancho */
+    gap: 4px; /* Más compacto */
   }
 
   .search-bar input {
-    max-width: 55px;
+    flex: 1 1 auto; /* Que se ajuste al espacio disponible */
+    min-width: 50px; /* Sin hacerse ultra pequeño */
+    max-width: none; /* Quitar restricción problemática */
+    font-size: 0.7rem;
+    padding: 2px 4px;
   }
 
   .search-bar button {
     font-size: 0.65rem;
     padding: 2px 4px;
+    white-space: nowrap;
   }
 }
 
