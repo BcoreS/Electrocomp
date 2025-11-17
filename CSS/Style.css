@@ -176,3 +176,151 @@ nav {
     font-size: 1.3rem !important;
   }
 }
+/*Diseño divPrincipal*/
+.DivPrin {
+    font-family: "Roboto", sans-serif;
+    max-width: 1600px;      /* Ajusta el ancho máximo */
+    width: 100%;             /* Mantén responsive */
+    margin: 0 auto;         /* Centra el contenedor */
+    background-color: rgb(255, 255, 255);
+    /* Quitar overflow-x para evitar scroll innecesario */
+}
+
+#ofertasCarousel .carousel-inner .row {
+    flex-wrap: wrap;        /* Permite que las tarjetas bajen si no caben */
+    justify-content: center;/* Centra las tarjetas */
+}
+
+.oferta-card {
+    transition: transform 0.5s ease, box-shadow 0.8s ease;
+    width: 300px;           /* Tamaño fijo para cada tarjeta */
+    margin: 0 auto;
+}
+
+.oferta-card img {
+    width: 100%;            /* Ocupa todo el ancho de la tarjeta */
+    height: 250px;          /* Alto fijo */
+    object-fit: cover;      /* Recorta sin deformar */
+    border-radius: 8px;
+    display: block;
+    background-color: #fff;
+}
+
+.oferta-card:hover{
+ transform: translateY(-10px); /* lo levanta */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+footer{
+    color: #fff;
+}
+
+.NoveCar{
+    height: 750px;
+    max-height: 1000px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.service-item {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-img img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.service-text {
+  padding: 1.5rem;
+}
+
+.btn-more {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-more:hover {
+  background-color: #0056b3;
+}
+ 
+
+.carousel-control-prev {
+    left: -90px; /* Ajusta según tu diseño */
+}
+
+/* Flecha derecha fuera */
+.carousel-control-next {
+    right: -90px; /* Ajusta según tu diseño */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 100%, 100%;
+    width: 30px;
+    height: 30px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg); /* Blanco */
+
+}
+
+.DivPrin .section-title {
+    font-size: 2.8rem;           /* Más grande */
+    font-weight: 800;            /* Más grueso */
+    text-transform: uppercase;   /* Mayúsculas */
+    color: #007bff;              /* Color corporativo */
+    letter-spacing: 1px;         /* Espaciado entre letras */
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.DivPrin .section-title::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 4px;
+    background-color: #007bff;
+    bottom: -0.1px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 1rem;
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+
+@media (max-width: 980px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
+  .service-img img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  }
+}
