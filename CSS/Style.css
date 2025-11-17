@@ -90,6 +90,39 @@ nav {
   }
 }
 
+@media (max-width: 400px) {
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .search-bar {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+
+  .search-bar input {
+    flex: 1 1 auto;
+    min-width: 50px;
+    padding: 2px 4px;
+    font-size: 0.8rem;
+  }
+
+  .search-bar button {
+    flex: 0 0 auto;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+  }
+
+  .navbar-toggler {
+    flex-shrink: 0;
+  }
+}
+
 /*Carousel*/
 
 .carousel-item .carousel-caption {
@@ -98,7 +131,7 @@ nav {
   transform: translateY(-50%);
 }
 
-.carousel-item::before {
+.carousel1::before {
   content: "";
   position: absolute;
   top: 0;
