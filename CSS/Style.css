@@ -406,7 +406,7 @@ nav {
 .footer-logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #008BC2;
+  color: #008bc2;
   margin-bottom: 1rem;
 }
 
@@ -439,7 +439,7 @@ nav {
 }
 
 .footer-links ul li a:hover {
-  color: #008BC2;
+  color: #008bc2;
 }
 
 .footer-contact p {
@@ -449,17 +449,111 @@ nav {
 
 .footer-contact i {
   margin-right: 8px;
-  color: #008BC2;
+  color: #008bc2;
 }
 
-    
 .footer-bottom {
-    grid-column: 1 / -1; /* Ocupa todas las columnas del grid */
-    text-align: center;
-    margin-top: 1.5rem;
-    font-size: 0.9rem;
-    color: #ccc;
-    border-top: 1px solid #333;
-    padding-top: 1rem;
+  grid-column: 1 / -1; /* Ocupa todas las columnas del grid */
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
 
+/*=========================================================
+  HOT DEAL - Sección añadida después
+===========================================================*/
+
+#hot-deal.section {
+  padding: 60px 0px;
+  margin: 30px 0px;
+  background-color: #e4e7ed;
+  background-image: url("../Resources/hotdeal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hot-deal {
+  text-align: center;
+}
+
+.hot-deal .hot-deal-countdown {
+  margin-bottom: 30px;
+}
+
+.hot-deal .hot-deal-countdown > li {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #0585b8;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+.hot-deal .hot-deal-countdown > li > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.hot-deal .hot-deal-countdown > li > div h3 {
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.hot-deal .hot-deal-countdown > li > div span {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hot-deal p {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.hot-deal .cta-btn {
+  margin-top: 15px;
+}
+
+.primary-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #117095;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+/* --- Fix Responsive Countdown HOT DEAL --- */
+.hot-deal .hot-deal-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+}
+
+/* Asegurar que los LI no choquen entre sí */
+.hot-deal .hot-deal-countdown > li {
+  margin: 0;
+}
+
+.primary-btn.cta-btn {
+  text-decoration: none !important;
 }
