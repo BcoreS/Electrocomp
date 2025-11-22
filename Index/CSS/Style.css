@@ -96,10 +96,7 @@ nav {
     margin: 4px;
   }
 
-  #mainNavbar .nav-link:hover,
-  #mainNavbar .dropdown-menu .dropdown-item:hover {
-    background: var(--overlay-light);
-  }
+
 }
 
 /* Navbar para pantallas muy pequeñas */
@@ -227,6 +224,13 @@ nav {
   background-size: 100% 100%;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100% 100%;
+  width: 30px;
+  height: 30px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+}
 /* ==================================================
    OFERTAS / DIV PRINCIPAL
    ================================================== */
@@ -238,45 +242,32 @@ nav {
   background-color: #fff;
 }
 
-#ofertasCarousel .carousel-inner .row {
-  flex-wrap: wrap;
-  justify-content: center;
+.cardsOferta {
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card-body{
+  text-align: left;
+  padding: 15px;
 }
 
-.oferta-card {
-  transition: transform 0.5s ease, box-shadow 0.8s ease;
-  width: 300px;
-  margin: 0 auto;
-}
 
-.oferta-card img {
+.cardsOferta img {
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  background-color: #fff;
 }
 
-.oferta-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+.cardsOferta:hover {
+  transform: translateY(-5px);
 }
 
-#ofertasCarousel .carousel-control-prev {
-  left: 10px;
-}
-#ofertasCarousel .carousel-control-next {
-  right: 10px;
-}
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-size: 100% 100%;
-  width: 30px;
-  height: 30px;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
-}
+
+
 
 /* ==================================================
    SERVICES GRID
