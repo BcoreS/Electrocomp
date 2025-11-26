@@ -16,7 +16,7 @@ header {
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 50px 0;
+  padding: 60px 0;
   position: relative;
 }
 
@@ -27,7 +27,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(20, 19, 19, 0.5);
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65));
 }
 
 .header-content {
@@ -37,7 +37,7 @@ header::before {
 
 .header-logo {
   width: 100%;
-  max-width: 350px;
+  max-width: 260px;
   background-color: white;
   border-radius: 100px;
   border-style: outset;
@@ -47,6 +47,7 @@ header::before {
   font-weight: bolder;
   font-size: 1.5rem;
   margin-top: 1.2rem;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 @media (max-width: 576px) {
@@ -61,13 +62,19 @@ header::before {
 /* ==================================================
    NAVBAR
    ================================================== */
-nav {
-  background-image: url("../Resources/FondoMontañas.jpg");
+
+.navbar {
+  background-color: #1069c8 !important;
   background-size: cover;
 }
 
 .listaNav li a {
   color: white;
+  transition: 0.3s ease;
+}
+
+.listaNav li a:hover {
+  transform: translateY(-2px);
 }
 
 /* Media query para navbar responsive */
@@ -95,8 +102,6 @@ nav {
     border-radius: 6px;
     margin: 4px;
   }
-
-
 }
 
 /* Navbar para pantallas muy pequeñas */
@@ -163,7 +168,6 @@ nav {
    PANTALLAS MEDIANAS / TABLETS
    ================================================== */
 @media (max-width: 768px) {
-  /* ❗ Quitar centrado vertical que causa espacios gigantes */
   .carousel-item .carousel-caption {
     top: auto;
     bottom: 15%;
@@ -249,11 +253,10 @@ nav {
   overflow: hidden;
   transition: transform 0.3s ease;
 }
-.card-body{
+.card-body {
   text-align: left;
   padding: 15px;
 }
-
 
 .cardsOferta img {
   width: 100%;
@@ -264,10 +267,6 @@ nav {
 .cardsOferta:hover {
   transform: translateY(-5px);
 }
-
-
-
-
 
 /* ==================================================
    SERVICES GRID
@@ -444,7 +443,7 @@ nav {
 }
 
 .footer-bottom {
-  grid-column: 1 / -1; /* Ocupa todas las columnas del grid */
+  grid-column: 1 / -1;
   text-align: center;
   margin-top: 1.5rem;
   font-size: 0.9rem;
@@ -600,7 +599,7 @@ nav {
 }
 
 :root {
-  --accent-color: #000dff; /* o el color que quieras */
+  --accent-color: #000dff;
 }
 
 .read-more {
