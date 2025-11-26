@@ -1,0 +1,180 @@
+header {
+  background: url("../../Home/Resources/CubosExtrañosTecho.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 60px 0;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65));
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* ==================================================
+   NAVBAR
+   ================================================== */
+
+.navbar {
+  background-color: #1069c8 !important;
+  background-size: cover;
+}
+
+.listaNav li a {
+  color: white;
+  transition: 0.3s ease;
+}
+
+.listaNav li a:hover {
+  transform: translateY(-2px);
+}
+
+/* Media query para navbar responsive */
+@media (max-width: 991px) {
+  #mainNavbar .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+
+  #mainNavbar .nav-link,
+  #mainNavbar .dropdown-toggle {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    margin: 4px 0;
+    padding: 10px 12px;
+  }
+
+  #mainNavbar .dropdown-toggle.show {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  #mainNavbar .dropdown-menu .dropdown-item {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff !important;
+    border-radius: 6px;
+    margin: 4px;
+  }
+}
+
+/* Navbar para pantallas muy pequeñas */
+@media (max-width: 420px) {
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .search-bar {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    margin-right: 5px;
+  }
+
+  .search-bar input {
+    flex: 1 1 50px;
+    min-width: 30px;
+    font-size: 0.7rem;
+    padding: 2px 4px;
+  }
+
+  .search-bar button {
+    flex: 0 0 auto;
+    font-size: 0.7rem;
+    padding: 2px 4px;
+    margin-left: 2px;
+  }
+
+  .navbar-toggler {
+    flex-shrink: 0;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/*FOOTER*/
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 3rem 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #008bc2;
+  margin-bottom: 1rem;
+}
+
+.footer-about p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #008bc2;
+}
+
+.footer-contact p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-contact i {
+  margin-right: 8px;
+  color: #008bc2;
+}
+
+.footer-bottom {
+  grid-column: 1 / -1; /* Ocupa todas las columnas del grid */
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}

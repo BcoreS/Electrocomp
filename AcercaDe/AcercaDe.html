@@ -1,383 +1,228 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Page: Acerca de Nosotros</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Place favicon.ico in the root directory -->
-
-    <!-- ========================= CSS here ========================= -->
-    <link rel="stylesheet" href="../Bootstrap5/bootstrap-5.0.0-beta1.min.css" />
-    <link rel="stylesheet" href="CSS/LineIcons.2.0.css" />
-    <link rel="stylesheet" href="CSS/tiny-slider.css" />
-    <link rel="stylesheet" href="CSS/animate.css" />
-    <link rel="stylesheet" href="CSS/lindy-uikit.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acerca del Sitio - Electrocomp</title>
+    <link rel="stylesheet" href="../Bootstrap5/bootstrap.min.css" />
+    <link rel="stylesheet" href="../AcercaDe/CSS/Style.css" />
+    <link rel="stylesheet" href="../AcercaDe/CSS/LineIcons.2.0.css" />
   </head>
   <body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-
-    <!-- ========================= preloader start ========================= -->
-    <div class="preloader">
-      <div class="loader">
-        <div class="spinner">
-          <div class="spinner-container">
-            <div class="spinner-rotator">
-              <div class="spinner-left">
-                <div class="spinner-circle"></div>
-              </div>
-              <div class="spinner-right">
-                <div class="spinner-circle"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- HERO / ENCABEZADO -->
+    <header class="py-5 text-white text-center">
+      <div class="container">
+        <h1 class="fw-bold">Acerca del Sitio</h1>
+        <p class="lead mt-3">
+          Conoce la finalidad, estructura y tecnologías detrás del desarrollo de
+          Electrocomp.
+        </p>
       </div>
-    </div>
-    <!-- ========================= preloader end ========================= -->
+    </header>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top"
+    >
+      <div class="container-fluid">
+        <form class="d-flex search-bar" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder=""
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
 
-    <!-- ========================= hero-section-wrapper-5 start ========================= -->
-    <section id="home" class="hero-section-wrapper-5">
-      <!-- ========================= header-6 start ========================= -->
-      <header class="header header-6">
-        <nav
-          class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top"
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
         >
-          <div class="container-fluid">
-            <form class="d-flex search-bar" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder=""
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-light" type="submit">
-                Buscar
-              </button>
-            </form>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#mainNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="mainNavbar">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 listaNav">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    >Servicios</a
-                  >
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li>
-                      <a class="dropdown-item" href="pcs.html"
-                        >PCs de segunda mano</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="perifericos.html"
-                        >Periféricos</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="servicios-tecnicos.html"
-                        >Servicios técnicos</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="HTML/AcercaDe.html">Acerca</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="otros.html">Otros</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- navbar area -->
-      </header>
-      <!-- ========================= header-6 end ========================= -->
-
-      <!-- ========================= hero-5 start ========================= -->
-      <div
-        class="hero-section hero-style-5 img-bg"
-        style="background-image: url('IMG/hero/hero-5/hero-bg.svg')"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="hero-content-wrapper">
-                <h2 class="mb-30 wow fadeInUp" data-wow-delay=".2s">
-                  ¿Quiénes somos?
-                </h2>
-                <p class="mb-30 wow fadeInUp" data-wow-delay=".4s">
-                  Electrocomp es una empresa fundada en XXXX, completamente
-                  enfocada en abastecer las necesidades del mercado de
-                  Informática y sus ramas.
-                </p>
-                <a
-                  href="#0"
-                  class="button button-lg radius-50 wow fadeInUp"
-                  data-wow-delay=".6s"
-                  >Ver más <i class="lni lni-chevron-right"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6 align-self-end">
-              <div class="hero-image wow fadeInUp" data-wow-delay=".5s">
-                <img src="IMG/hero/hero-5/hero-img.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ========================= hero-5 end ========================= -->
-    </section>
-    <!-- ========================= hero-section-wrapper-6 end ========================= -->
-
-    <!-- ========================= feature style-5 start ========================= -->
-    <section id="feature" class="feature-section feature-style-5">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xxl-5 col-xl-5 col-lg-7 col-md-8">
-            <div class="section-title text-center mb-60">
-              <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">
-                Nos especializamos en:
-              </h3>
-              <p class="wow fadeInUp" data-wow-delay=".4s">
-                Ofrecemos un sinnúmero de diferentes servicios y dispositivos,
-                entre nuestros más destacados se encuentran:
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
-              <div class="icon">
-                <i class="lni lni-vector"></i>
-                <svg
-                  width="110"
-                  height="72"
-                  viewBox="0 0 110 72"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                    fill="#EBF4FF"
-                  />
-                </svg>
-              </div>
-              <div class="content">
-                <h5>Mantenimiento</h5>
-                <p>Extendemos la vida útil de su computador en gran manera.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
-              <div class="icon">
-                <i class="lni lni-stats-up"></i>
-                <svg
-                  width="110"
-                  height="72"
-                  viewBox="0 0 110 72"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                    fill="#EBF4FF"
-                  />
-                </svg>
-              </div>
-              <div class="content">
-                <h5>Venta de Laptops</h5>
-                <p>Ofrecemos laptops de segunda mano asequibles.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
-              <div class="icon">
-                <i class="lni lni-lock"></i>
-                <svg
-                  width="110"
-                  height="72"
-                  viewBox="0 0 110 72"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                    fill="#EBF4FF"
-                  />
-                </svg>
-              </div>
-              <div class="content">
-                <h5>Venta de Periféricos</h5>
-                <p>También tenemos los mejores electrónicos del mercado.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ========================= feature style-5 end ========================= -->
-
-    <!-- ========================= about style-4 start ========================= -->
-    <section id="about" class="about-section about-style-4">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-5 col-lg-6">
-            <div class="about-content-wrapper">
-              <div class="section-title mb-30">
-                <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                  Canales de Distribución
-                </h3>
-                <p class="wow fadeInUp" data-wow-delay=".3s">
-                  Actualmente nuestros servicios se pueden encontrar en 3
-                  canales diferentes.
-                </p>
-              </div>
-              <ul>
-                <li class="wow fadeInUp" data-wow-delay=".35s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Puedes consultar por medio de nuestros contactos
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".4s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  En esta misma página podrás encontrar la ubicación de nuestra
-                  tienda física
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".45s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Además puedes visitar nuestro catálogo en línea
-                </li>
-              </ul>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 listaNav">
+            <li class="nav-item dropdown">
               <a
-                href="#0"
-                class="button button-lg radius-10 wow fadeInUp"
-                data-wow-delay=".5s"
-                >Catálogo Online</a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Servicios</a
               >
-            </div>
-          </div>
-          <div class="col-xl-7 col-lg-6">
-            <div
-              class="about-image text-lg-right wow fadeInUp"
-              data-wow-delay=".5s"
-            >
-              <img src="IMG/about/about-4/about-img.svg" alt="" />
-            </div>
-          </div>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="pcs.html"
+                    >PCs de segunda mano</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="perifericos.html"
+                    >Periféricos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="servicios-tecnicos.html"
+                    >Servicios técnicos</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AcercaDe.html">Acerca</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="otros.html">Otros</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!-- ========================= about style-4 end ========================= -->
+    </nav>
 
-    <!-- ========================= pricing style-4 start ========================= -->
-    <section id="pricing" class="pricing-section pricing-style-4 bg-light">
+    <!-- SECCIÓN: ¿QUÉ ES ELECTROCOMP? -->
+    <section class="py-5">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-xl-5 col-lg-6">
-            <div class="section-title mb-60">
-              <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">
-                ¿Haz explorado nuestro sitio web?
-              </h3>
-              <p class="wow fadeInUp" data-wow-delay=".4s">
-                ¡Tenemos una amplia cantidad de productos, información y
-                detalles que te podrían encantar!, te compartimos algunas de
-                ellas:
-              </p>
-            </div>
+          <div class="col-lg-8 mb-4">
+            <h2 class="fw-bold mb-3">¿Qué es Electrocomp?</h2>
+            <p>
+              Electrocomp es un sitio web desarrollado como parte del proyecto
+              académico del curso de
+              <strong>Diseño Web</strong>. Su objetivo es presentar de forma
+              clara y profesional los servicios, productos y contenido
+              informativo de un emprendimiento tecnológico.
+            </p>
+            <p>
+              El sitio busca ofrecer una experiencia moderna, rápida y
+              accesible, siguiendo el enfoque
+              <strong>Mobile First</strong> y aplicando buenas prácticas de
+              diseño y usabilidad.
+            </p>
           </div>
-          <div class="col-xl-7 col-lg-6">
-            <div
-              class="pricing-active-wrapper wow fadeInUp"
-              data-wow-delay=".4s"
-            >
-              <div class="pricing-active">
-                <div class="single-pricing-wrapper">
-                  <div class="single-pricing">
-                    <h6>Contactanos</h6>
-                    <h4>Contctanos</h4>
-                    <h3>$ 29.00</h3>
-                    <ul>
-                      <li>Carefully crafted components</li>
-                      <li>Amazing page examples</li>
-                      <li>Super friendly support team</li>
-                      <li>Awesome Support</li>
-                    </ul>
-                    <a href="#0" class="button radius-30">Get Started</a>
-                  </div>
-                </div>
-                <div class="single-pricing-wrapper">
-                  <div class="single-pricing">
-                    <h6>Standard Design</h6>
-                    <h4>Web Development</h4>
-                    <h3>$ 89.00</h3>
-                    <ul>
-                      <li>Carefully crafted components</li>
-                      <li>Amazing page examples</li>
-                      <li>Super friendly support team</li>
-                      <li>Awesome Support</li>
-                    </ul>
-                    <a href="#0" class="button radius-30">Get Started</a>
-                  </div>
-                </div>
-                <div class="single-pricing-wrapper">
-                  <div class="single-pricing">
-                    <h6>Pro Design</h6>
-                    <h4>Design & Develop</h4>
-                    <h3>$ 199.00</h3>
-                    <ul>
-                      <li>Carefully crafted components</li>
-                      <li>Amazing page examples</li>
-                      <li>Super friendly support team</li>
-                      <li>Awesome Support</li>
-                    </ul>
-                    <a href="#0" class="button radius-30">Get Started</a>
-                  </div>
-                </div>
-              </div>
+          <div class="col-lg-4">
+            <img
+              src="../Home/Resources/LogoElectrocomp.png"
+              class="img-fluid rounded shadow"
+              alt="Acerca de Electrocomp"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: TECNOLOGÍAS UTILIZADAS -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-5">Tecnologías Utilizadas</h2>
+        <div class="row text-center g-4">
+          <div class="col-md-4">
+            <i
+              class="lni lni-html5"
+              style="font-size: 40px; color: #e34c26"
+            ></i>
+            <h5 class="mt-3">HTML5</h5>
+            <p>Estructura semántica del sitio con etiquetas modernas.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="lni lni-css3" style="font-size: 40px; color: #264de4"></i>
+            <h5 class="mt-3">CSS3 & Bootstrap</h5>
+            <p>Diseño responsivo, estilos visuales y componentes preparados.</p>
+          </div>
+          <div class="col-md-4">
+            <i
+              class="lni lni-javascript"
+              style="font-size: 40px; color: #f0db4f"
+            ></i>
+            <h5 class="mt-3">JavaScript</h5>
+            <p>
+              Interactividad, animaciones y carga dinámica de contenido JSON.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="lni lni-code" style="font-size: 40px; color: #0865a6"></i>
+            <h5 class="mt-3">jQuery</h5>
+            <p>
+              Efectos visuales y funciones rápidas para manipulación del DOM.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="lni lni-map" style="font-size: 40px; color: #28a745"></i>
+            <h5 class="mt-3">Google Maps API</h5>
+            <p>Implementación de geolocalización para ubicar el negocio.</p>
+          </div>
+          <div class="col-md-4">
+            <i
+              class="lni lni-video"
+              style="font-size: 40px; color: #dc3545"
+            ></i>
+            <h5 class="mt-3">Multimedia HTML5</h5>
+            <p>
+              Reproducción de audio y video en las secciones correspondientes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: ESTRUCTURA DEL SITIO -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-4">Estructura del Sitio</h2>
+        <p class="text-center mb-5">
+          Estas son las páginas que componen Electrocomp:
+        </p>
+        <div class="row g-4 text-center">
+          <div class="col-md-4">
+            <div class="p-3 shadow-sm rounded"><a href="">Home</a></div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 shadow-sm rounded"><a href="">Historia</a></div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 shadow-sm rounded"><a href="">Servicios</a></div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 shadow-sm rounded"><a href="">Galería</a></div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 shadow-sm rounded"><a href="">Contacto</a></div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-3 shadow-sm rounded">
+              <a href="">Acerca del sitio</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ========================= pricing style-4 end ========================= -->
 
-    <!-- ========================= footer style-4 start ========================= -->
+    <!-- SECCIÓN: SOBRE EL DESARROLLADOR -->
+    <section class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Sobre el Desarrollador</h2>
+        <p>
+          Este sitio fue desarrollado por
+          <strong>Brandon C y Abraham A</strong> como parte del proyecto
+          académico de la asignatura de Diseño Web. El objetivo principal fue
+          aplicar conocimientos de maquetado, estilos, interactividad y
+          desarrollo responsivo.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container">
         <!-- Logo y descripción -->
@@ -422,16 +267,7 @@
         <p>&copy; 2025 Electrocomp. Todos los derechos reservados ℹ️</p>
       </div>
     </footer>
-    <!-- ========================= footer style-4 end ========================= -->
 
-    <!-- ========================= scroll-top start ========================= -->
-    <a href="#" class="scroll-top"> <i class="lni lni-chevron-up"></i> </a>
-    <!-- ========================= scroll-top end ========================= -->
-
-    <!-- ========================= JS here ========================= -->
-    <script src="../Bootstrap5/bootstrap-5.0.0-beta1.min.js"></script>
-    <script src="JS/tiny-slider.js"></script>
-    <script src="JS/wow.min.js"></script>
-    <script src="JS/main.js"></script>
+    <script src="../Bootstrap5/bootstrap.bundle.min.js"></script>
   </body>
 </html>
