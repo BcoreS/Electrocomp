@@ -326,57 +326,6 @@ header::before {
   }
 }
 
-/* ==================================================
-   TITULOS Y SECCIONES
-   ================================================== */
-.DivPrin .section-title {
-  font-size: 2.8rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: var(--primary-color);
-  letter-spacing: 1px;
-  margin-bottom: 0.5rem;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 15px;
-}
-
-.DivPrin .section-title::after {
-  content: "";
-  position: absolute;
-  width: 180px;
-  height: 4px;
-  background-color: var(--primary-color);
-  bottom: -0.1px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 2px;
-}
-
-.section-subtitle {
-  font-size: 1.2rem;
-  color: #555;
-  margin: 1rem 0 5px;
-  text-align: left;
-}
-
-.tituloOferta {
-  padding-top: 2rem;
-}
-
-@media (max-width: 420px) {
-  .DivPrin {
-    display: block;
-  }
-  .service-text {
-    text-align: center;
-  }
-
-  .service-text a {
-    display: inline-block;
-    margin: 0 auto;
-  }
-}
 /*FOOTER*/
 .footer {
   background-color: #1a1a1a;
@@ -605,4 +554,72 @@ header::before {
 .read-more {
   color: white;
   text-decoration: none !important;
+}
+
+/*Carousel de ofertas*/
+
+.carousel2 {
+  margin-bottom: 2%;
+}
+
+.carousel2 img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .carousel2 img {
+    height: 220px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .carousel2 img {
+    height: 320px;
+  }
+}
+
+@media (min-width: 993px) {
+  .carousel2 img {
+    height: 480px;
+  }
+}
+
+/* Overlay profesional para el carousel dinámico */
+.carousel2 {
+  position: relative;
+}
+
+.carousel2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* oscuridad ajustable */
+  z-index: 1;
+}
+
+/* Texto por encima del overlay */
+.carousel2 .carousel-caption {
+  position: absolute;
+  z-index: 2;
+}
+
+.carousel2 .carousel-caption h5,
+.carousel2 .carousel-caption p {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  font-weight: bolder;
+  font-size: larger;
+}
+
+@media (max-width: 768px) {
+  .carousel2 .carousel-caption {
+    display: block !important;
+  }
+  .carousel2 .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel2 .carousel-caption p {
+    font-size: 0.85rem;
+  }
 }

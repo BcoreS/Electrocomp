@@ -16,10 +16,6 @@
     <link rel="stylesheet" href="Home/CSS/Style.css" />
 
     <!--SLICK-->
-    <link rel="stylesheet" href="Home/CSS/slick.css" />
-    <link rel="stylesheet" href="Home/CSS/slick-theme.css" />
-
-    <link href="Home/CSS/animate.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -268,76 +264,33 @@
     </div>
     <!-- /HOT DEAL SECTION -->
 
-    <!--Div Principal-->
-    <div class="container-fluid DivPrin SlickOfertas">
-      <div class="cardsOferta" style="width: 18rem">
-        <img src="Home/Resources/Oferta1.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title py-1">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content.
-          </p>
-          <a href="#" class="btn btn-info">Go somewhere</a>
-        </div>
-      </div>
+    <!--Carousel de ofertas-->
 
-      <div class="cardsOferta" style="width: 18rem">
-        <img src="Home/Resources/Oferta2.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title py-1">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content.
-          </p>
-          <a href="#" class="btn btn-info">Go somewhere</a>
-        </div>
-      </div>
-      <div class="cardsOferta" style="width: 18rem">
-        <img src="Home/Resources/Oferta3.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title py-1">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content.
-          </p>
-          <a href="#" class="btn btn-info">Go somewhere</a>
-        </div>
-      </div>
-      <div class="cardsOferta" style="width: 18rem">
-        <img src="Home/Resources/Oferta4.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title py-1">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content.
-          </p>
-          <a href="#" class="btn btn-info">Go somewhere</a>
-        </div>
-      </div>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators" id="carousel-indicators"></div>
+      <div class="carousel-inner" id="carousel-inner"></div>
 
-      <div class="cardsOferta" style="width: 18rem">
-        <img src="Home/Resources/Oferta5.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title py-1">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content.
-          </p>
-          <a href="#" class="btn btn-info">Go somewhere</a>
-        </div>
-      </div>
-      <div class="cardsOferta" style="width: 18rem">
-        <img src="Home/Resources/Oferta6.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title py-1">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content.
-          </p>
-          <a href="#" class="btn btn-info">Go somewhere</a>
-        </div>
-      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
 
     <!--Footer-->

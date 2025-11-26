@@ -1,23 +1,33 @@
-//SLICK
+fetch("Home/JSON/carousel.json")
+  .then((resp) => resp.json())
+  .then((data) => {
+    const indicators = document.getElementById("carousel-indicators");
+    const inner = document.getElementById("carousel-inner");
 
-$(document).ready(function(){
-  $('.SlickOfertas').slick({
-    slidesToShow: 4,        // Mostrar 4 cards en fila
-    slidesToScroll: 1,      // Mover 1 por vez
-    infinite: true,
-    arrows: true,
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 900,
-        settings: { slidesToShow: 2 }
-      },
-      {
-        breakpoint: 576,
-        settings: { slidesToShow: 1 }
-      }
-    ]
-  });
-});
+    data.forEach((item, index) => {
+      // --- INDICADORES ---
+      const button = document.createElement("button");
+      button.type = "button";
+      button.dataset.bsTarget = "#carouselExampleIndicators";
+      button.dataset.bsSlideTo = index;
+      if (index === 0) button.classList.add("active");
+      indicators.appendChild(button);
+
+      // --- ITEMS DEL CAROUSEL ---
+      const div = document.createElement("div");
+      div.classList.add("carousel-item");
+      div.classList.add("carousel2");
+      if (index === 0) div.classList.add("active");
+
+      div.innerHTML = `
+        <img src="${item.img}" class="d-block w-100" alt="${item.title}">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>${item.title}</h5>
+          <p>${item.text}</p>
+        </div>
+      `;
+
+      inner.appendChild(div);
+    });
+  })
+  .catch((err) => console.error("Error cargando el JSON del carousel:", err));

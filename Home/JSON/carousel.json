@@ -1,0 +1,17 @@
+[
+  {
+    "img": "Home/Resources/Oferta1.jpg",
+    "title": "Laptop en descuento",
+    "text": "Aprovecha un 25% de descuento por tiempo limitado."
+  },
+  {
+    "img": "Home/Resources/Oferta2.jpg",
+    "title": "Ensamblaje Profesional",
+    "text": "Armamos tu PC como todo un experto."
+  },
+  {
+    "img": "Home/Resources/Oferta3.jpg",
+    "title": "Periféricos Gamer",
+    "text": "Teclados mecánicos, mouse RGB y más."
+  }
+]
