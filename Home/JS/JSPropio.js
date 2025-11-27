@@ -5,7 +5,6 @@ fetch("Home/JSON/carousel.json")
     const inner = document.getElementById("carousel-inner");
 
     data.forEach((item, index) => {
-      // --- INDICADORES ---
       const button = document.createElement("button");
       button.type = "button";
       button.dataset.bsTarget = "#carouselExampleIndicators";
@@ -13,7 +12,6 @@ fetch("Home/JSON/carousel.json")
       if (index === 0) button.classList.add("active");
       indicators.appendChild(button);
 
-      // --- ITEMS DEL CAROUSEL ---
       const div = document.createElement("div");
       div.classList.add("carousel-item");
       div.classList.add("carousel2");
