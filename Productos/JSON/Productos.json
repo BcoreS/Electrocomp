@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "nombre": "Laptop Dell Latitude 5490",
+    "descripcion": "Core i5, 8GB RAM, SSD 256GB.",
+    "precio": 165000,
+    "imagen": "Resources/laptop1.jpg",
+    "categoria": "laptop"
+  },
+  {
+    "id": 2,
+    "nombre": "Laptop HP Pavilion 15",
+    "descripcion": "AMD Ryzen 5, 12GB RAM, SSD 512GB.",
+    "precio": 230000,
+    "imagen": "Resources/laptop2.jpg",
+    "categoria": "laptop"
+  },
+  {
+    "id": 3,
+    "nombre": "Lenovo ThinkPad T480",
+    "descripcion": "i5 8ª Gen, 16GB RAM, SSD 512GB.",
+    "precio": 210000,
+    "imagen": "Resources/laptop3.jpg",
+    "categoria": "laptop"
+  },
+  {
+    "id": 4,
+    "nombre": "Asus VivoBook 14",
+    "descripcion": "Intel i3 10ª Gen, 8GB RAM, SSD 256GB.",
+    "precio": 145000,
+    "imagen": "Resources/laptop4.jpg",
+    "categoria": "laptop"
+  },
+  {
+    "id": 5,
+    "nombre": "Acer Aspire 5",
+    "descripcion": "Ryzen 3, 8GB RAM, SSD 256GB.",
+    "precio": 155000,
+    "imagen": "Resources/laptop5.jpg",
+    "categoria": "laptop"
+  },
+  {
+    "id": 6,
+    "nombre": "MacBook Pro 2015",
+    "descripcion": "i7, 16GB RAM, SSD 512GB.",
+    "precio": 270000,
+    "imagen": "Resources/laptop6.jpg",
+    "categoria": "laptop"
+  },
+
+  {
+    "id": 7,
+    "nombre": "Teclado Mecánico Redragon Kumara",
+    "descripcion": "Switches OUTEMU Blue, RGB.",
+    "precio": 18500,
+    "imagen": "Resources/periferico1.jpg",
+    "categoria": "periferico"
+  },
+  {
+    "id": 8,
+    "nombre": "Mouse Logitech G203",
+    "descripcion": "8000 DPI, RGB Lightsync.",
+    "precio": 15000,
+    "imagen": "Resources/periferico2.jpg",
+    "categoria": "periferico"
+  },
+  {
+    "id": 9,
+    "nombre": "Audífonos HyperX Cloud Stinger",
+    "descripcion": "Ligero, buena calidad de sonido.",
+    "precio": 24000,
+    "imagen": "Resources/periferico3.jpg",
+    "categoria": "periferico"
+  },
+  {
+    "id": 10,
+    "nombre": "Monitor Dell 22 pulgadas",
+    "descripcion": "Full HD, panel IPS.",
+    "precio": 55000,
+    "imagen": "Resources/periferico4.jpg",
+    "categoria": "periferico"
+  },
+  {
+    "id": 11,
+    "nombre": "Parlantes Logitech Z200",
+    "descripcion": "Calidad estéreo, diseño elegante.",
+    "precio": 18000,
+    "imagen": "Resources/periferico5.jpg",
+    "categoria": "periferico"
+  },
+  {
+    "id": 12,
+    "nombre": "Webcam Microsoft Lifecam",
+    "descripcion": "720p HD, micrófono integrado.",
+    "precio": 22000,
+    "imagen": "Resources/periferico6.jpg",
+    "categoria": "periferico"
+  },
+
+  {
+    "id": 13,
+    "nombre": "Reparación de laptops",
+    "descripcion": "Diagnóstico completo + limpieza interna.",
+    "precio": 20000,
+    "imagen": "Resources/servicio1.jpg",
+    "categoria": "servicio"
+  },
+  {
+    "id": 14,
+    "nombre": "Instalación de Windows + Drivers",
+    "descripcion": "Formateo + instalación de controladores.",
+    "precio": 12000,
+    "imagen": "Resources/servicio2.jpg",
+    "categoria": "servicio"
+  },
+  {
+    "id": 15,
+    "nombre": "Mantenimiento preventivo",
+    "descripcion": "Limpieza profunda y optimización.",
+    "precio": 15000,
+    "imagen": "Resources/servicio3.jpg",
+    "categoria": "servicio"
+  }
+]
