@@ -179,6 +179,28 @@ header .container {
   padding-top: 1rem;
 }
 
+.footer {
+  background: url("/Home/Resources/FondoMontañas.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #1a1a1a; /* fallback */
+  color: #fff;
+  padding: 3rem 2rem 1rem;
+}
+
+.footer-logo-img {
+  width: 160px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
+}
+
+.footer-about p,
+.footer-links ul li a,
+.footer-contact p,
+.footer-bottom {
+  color: #fff !important;
+}
+
 /*Mejora de filtros*/
 
 .filter-btn {
