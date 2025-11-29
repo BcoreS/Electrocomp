@@ -200,3 +200,64 @@ header .container {
 .footer-bottom {
   color: #fff !important;
 }
+
+/* ============================
+   TARJETA TIPO PASAPORTE
+============================ */
+
+/* Foto */
+.passport-photo img {
+  width: 150px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Información */
+.passport-info h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.passport-info p {
+  font-size: 1rem;
+  margin: 3px 0;
+}
+
+/* Iconos decorativos */
+.passport-icons i {
+  font-size: 2rem;
+  margin-right: 15px;
+  opacity: 0.8;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .passport-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .passport-photo img {
+    margin-bottom: 15px;
+  }
+}
+
+.passport-card {
+  max-width: 700px;
+
+  /* Fondo azul + textura estilo papel */
+  background: #0a2a43 url("../Resources/textura-de-papel.jpg");
+  background-size: cover;
+  background-blend-mode: normal;
+
+  color: #0a2a43;
+  border-radius: 15px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
