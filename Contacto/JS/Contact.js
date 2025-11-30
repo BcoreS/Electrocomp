@@ -1,35 +1,37 @@
-$(document).ready(function() {
-  // Calcular edad
-  $("#nacimiento").on("change", function() {
-    let fechaStr = $(this).val();
-    let partes = fechaStr.split("-");
-    let anio = parseInt(partes[0]);
-    let mes = parseInt(partes[1]);
-    let dia = parseInt(partes[2]);
+document.addEventListener("DOMContentLoaded", function() {
+  const nacimientoInput = document.getElementById("nacimiento");
+  const edadInput = document.querySelector("input[name='edad']");
+  const form = document.getElementById("registro-form");
+  const statusDiv = document.getElementById("status");
 
+  // Calcular edad automáticamente
+  nacimientoInput.addEventListener("change", function() {
+    if (!this.value) return;
+
+    const [anio, mes, dia] = this.value.split("-").map(Number);
     const hoy = new Date();
     let edad = hoy.getFullYear() - anio;
+
     if (hoy.getMonth() + 1 < mes || (hoy.getMonth() + 1 === mes && hoy.getDate() < dia)) {
       edad--;
     }
 
-    $("input[name='edad']").val(edad);
-    $("#edad").val(edad);
+    edadInput.value = edad;
   });
 
-  // Capturar y enviar datos
-  $("#registro-form").on("submit", function(e) {
+  // Capturar y enviar datos con EmailJS
+  form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    var nombre = $("input[name='nombre']").val();
-    var email = $("input[name='email']").val();
-    var fechaNacimiento = $("input[name='nacimiento']").val();
-    var edad = $("input[name='edad']").val();
-    var ingreso = $("input[name='ingreso']").val();
-    var genero = $("select[name='genero']").val();
-    var grado = $("select[name='grado']").val();
+    const nombre = document.querySelector("input[name='nombre']").value;
+    const email = document.querySelector("input[name='email']").value;
+    const fechaNacimiento = document.querySelector("input[name='nacimiento']").value;
+    const edad = document.querySelector("input[name='edad']").value;
+    const ingreso = document.querySelector("input[name='ingreso']").value;
+    const genero = document.querySelector("select[name='genero']").value;
+    const grado = Array.from(document.querySelector("select[name='grado']").selectedOptions).map(opt => opt.value);
 
-    console.log({nombre, email, fechaNacimiento, edad, ingreso, genero, grado});
+    console.log({ nombre, email, fechaNacimiento, edad, ingreso, genero, grado });
 
     emailjs.send("service_rwg4i09", "template_6t6l8aw", {
       nombre: nombre,
@@ -39,11 +41,11 @@ $(document).ready(function() {
       ingreso: ingreso,
       genero: genero,
       grado: grado.join(", ")
-    }).then(function() {
-      $("#status").html("<span class='text-success'>¡Registro enviado con éxito!</span>");
-      $("#registro-form")[0].reset();
-    }, function(error) {
-      $("#status").html("<span class='text-danger'>Error: " + JSON.stringify(error) + "</span>");
+    }).then(() => {
+      statusDiv.innerHTML = "<span class='text-success'>¡Registro enviado con éxito!</span>";
+      form.reset();
+    }).catch(error => {
+      statusDiv.innerHTML = "<span class='text-danger'>Error: " + JSON.stringify(error) + "</span>";
     });
   });
 });
