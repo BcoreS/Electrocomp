@@ -180,7 +180,7 @@ header .container {
 }
 
 .footer {
-  background: url("/Home/Resources/FondoMontañas.jpg");
+  background: url("../../Home/Resources/FondoMontañas.jpg");
   background-size: cover;
   background-position: center;
   background-color: #1a1a1a; /* fallback */
@@ -201,29 +201,26 @@ header .container {
   color: #fff !important;
 }
 
-
-
-
-    .form-container {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      padding: 30px;
-      color: #333;
-    }
-    .aside-container {
-      background: #f8f9fa;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      padding: 20px;
-    }
-    .btn-primary {
-      background-color: #0865a6;
-      border: none;
-    }
-    .btn-primary:hover {
-      background-color: #064d7d;
-    }
-    h2 {
-      color: #0865a6;
-    }
+.form-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  color: #333;
+}
+.aside-container {
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.btn-primary {
+  background-color: #0865a6;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #064d7d;
+}
+h2 {
+  color: #0865a6;
+}

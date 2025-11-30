@@ -16,7 +16,7 @@ btn.addEventListener("click", () => {
 
 $(document).ready(function () {
   function cargarProductos() {
-    $.getJSON("JSON/productos.json", function (data) {
+    $.getJSON("JSON/Productos.json", function (data) {
       $("#productosContainer").empty();
 
       data.forEach(function (producto) {

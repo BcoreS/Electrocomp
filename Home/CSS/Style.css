@@ -625,7 +625,7 @@ header::before {
 }
 
 .footer {
-  background: url("/Home/Resources/FondoMontañas.jpg");
+  background: url("../Resources/FondoMontañas.jpg");
   background-size: cover;
   background-position: center;
   background-color: #1a1a1a; /* fallback */
