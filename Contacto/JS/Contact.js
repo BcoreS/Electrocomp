@@ -74,9 +74,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //boton Autores y Dueño
   document.getElementById("BotonAcer").addEventListener("click", function () {
-    window.location.href = "../Autores/Autores.html";
+    window.location.href = "Autores/Autores.html";
   });
   document.getElementById("BotonDirec").addEventListener("click", function () {
-    window.location.href = "../Dueño/Dueño.html";
+    window.location.href = "Dueño/Dueño.html";
   });
 });
