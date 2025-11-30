@@ -224,3 +224,42 @@ header .container {
 h2 {
   color: #0865a6;
 }
+
+.botonesCont {
+  display: flex;
+  justify-content: space-between; /* Ajusta el espacio automáticamente */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  box-sizing: border-box;
+}
+
+
+#BotonAcer, #BotonDirec {
+  background-color: #0865a6; /* Color corporativo */
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#BotonAcer:hover, #BotonDirec:hover {
+  background-color: #064d7d;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 430px) {
+  .botonesCont {
+    flex-direction: column; /* Cambia a columna */
+    align-items: center; /* Centra los botones */
+  }
+
+  #BotonAcer, #BotonDirec {
+    width: 80%; /* Botones más anchos en móvil */
+    margin-bottom: 10px;
+  }
+}

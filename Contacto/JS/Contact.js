@@ -1,3 +1,4 @@
+//formulario contacto
 document.addEventListener("DOMContentLoaded", function() {
   const nacimientoInput = document.getElementById("nacimiento");
   const edadInput = document.querySelector("input[name='edad']");
@@ -48,4 +49,16 @@ document.addEventListener("DOMContentLoaded", function() {
       statusDiv.innerHTML = "<span class='text-danger'>Error: " + JSON.stringify(error) + "</span>";
     });
   });
+
+
+  //boton acerca de nosotros y direccion
+  document.getElementById("BotonAcer").addEventListener("click", function() {
+  window.location.href = "../AcercaDe/AcercaDe.html";
+  });
+  document.getElementById("BotonDirec").addEventListener("click", function() {
+  window.location.href = "../Direccion/direction.html";
+  });
+
+
+
 });
