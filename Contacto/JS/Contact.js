@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-  //boton acerca de nosotros y direccion
+  //boton Autores y Dueño
   document.getElementById("BotonAcer").addEventListener("click", function() {
-  window.location.href = "../AcercaDe/AcercaDe.html";
+  window.location.href = "../Autores/autores.html";
   });
   document.getElementById("BotonDirec").addEventListener("click", function() {
-  window.location.href = "../Direccion/direction.html";
+  window.location.href = "../Dueño/dueño.html";
   });
 
 
