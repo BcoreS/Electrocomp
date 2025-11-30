@@ -24,7 +24,7 @@ $(document).ready(function() {
     var nombre = $("input[name='nombre']").val();
     var email = $("input[name='email']").val();
     var fechaNacimiento = $("input[name='nacimiento']").val();
-    var edad = $("#edad").val();
+    var edad = $("input[name='edad']").val();
     var ingreso = $("input[name='ingreso']").val();
     var genero = $("select[name='genero']").val();
     var grado = $("select[name='grado']").val();
