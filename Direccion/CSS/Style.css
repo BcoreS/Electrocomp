@@ -216,20 +216,10 @@ header .container {
 }
 
 #weather{
-  width: 500px;
-  height: 100%;
+  width: auto;
+  height: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   padding: 10px;
   margin-bottom: 20px;
-}
-
-.tablaClima th,
-.tablaClima td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
-}
-.tablaClima th {
-  color: #008bc2;
 }

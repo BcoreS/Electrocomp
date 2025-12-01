@@ -139,36 +139,43 @@
 
     <!-- SECCIÓN: Google Maps -->
 
-    <section class="pb-5 pt-1">
-      <div class="container col-lg-12">
-        <h2 class="fw-bold text-center mb-4">
-          Ruta mas cercana a nuestra tienda
-        </h2>
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <div id="map"></div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
-  
-<div id="weather" class="container py-5 mb-5">
-    <div class="card shadow-lg border-0" style="max-width: 400px; margin:auto;">
-        <div class="card-body text-center">
+<section class="pb-5 pt-1">
+  <div class="container">
+    <!-- Título centrado arriba -->
+    <h2 class="fw-bold text-center mb-4">
+      Ruta más cercana a nuestra tienda
+    </h2>
+
+    <!-- Fila con mapa y clima uno al lado del otro -->
+    <div class="row justify-content-center">
+      <!-- Columna para el mapa (más ancha) -->
+      <div class="col-lg-8 col-md-7 mb-3">
+        <div id="map" style="height: 400px; border-radius: 8px;"></div>
+      </div>
+
+      <!-- Columna para el clima -->
+      <div class="col-lg-4 col-md-5">
+        <div id="weather" class="card shadow-lg border-0">
+          <div class="card-body text-center">
             <h4 class="card-title" id="city"></h4>
             <img id="icon" alt="Icono del clima" style="width:80px;">
             <p class="card-text" id="description" class="text-muted"></p>
             <table class="table table-sm table-bordered mt-3">
-                <tbody>
-                    <tr><td>Temperatura</td><td id="temp"></td></tr>
-                    <tr><td>Humedad</td><td id="humidity"></td></tr>
-                    <tr><td>Viento</td><td id="wind"></td></tr>
-                </tbody>
+              <tbody>
+                <tr><td>Temperatura</td><td id="temp"></td></tr>
+                <tr><td>Humedad</td><td id="humidity"></td></tr>
+                <tr><td>Viento</td><td id="wind"></td></tr>
+              </tbody>
             </table>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+</section>
+
 
     <!-- FOOTER -->
     <footer class="footer">
