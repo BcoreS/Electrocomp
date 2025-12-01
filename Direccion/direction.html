@@ -152,6 +152,24 @@
       </div>
     </section>
 
+  
+<div id="weather" class="container py-5 mb-5">
+    <div class="card shadow-lg border-0" style="max-width: 400px; margin:auto;">
+        <div class="card-body text-center">
+            <h4 class="card-title" id="city"></h4>
+            <img id="icon" alt="Icono del clima" style="width:80px;">
+            <p class="card-text" id="description" class="text-muted"></p>
+            <table class="table table-sm table-bordered mt-3">
+                <tbody>
+                    <tr><td>Temperatura</td><td id="temp"></td></tr>
+                    <tr><td>Humedad</td><td id="humidity"></td></tr>
+                    <tr><td>Viento</td><td id="wind"></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container">
@@ -212,5 +230,8 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsiISPbA3re_wpb-jIF8w6SS8EZcH1u0&callback=initMap"
     ></script>
+     <script>
+            scr="https://api.openweathermap.org/data/2.5/weather?lat=10.07200&lon=-84.30977&appid=fcb999651861374dfdcd703b90d25923"
+      </script>
   </body>
 </html>
