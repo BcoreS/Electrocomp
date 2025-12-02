@@ -1,3 +1,5 @@
+/*Animatopy*/
+
 @-webkit-keyframes bounceInDown {
   from,
   60%,
@@ -84,4 +86,62 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+/*Botones*/
+
+@keyframes fadeInBtn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInBtn {
+  animation-name: fadeInBtn;
+}
+
+.hoverGrowBtn {
+  transition: transform 0.25s ease;
+}
+
+.hoverGrowBtn:hover {
+  transform: scale(1.08);
+}
+
+.hoverPushBtn {
+  transition: transform 0.15s ease;
+}
+
+.hoverPushBtn:hover {
+  transform: translateY(-3px);
+}
+
+.hoverPushBtn:active {
+  transform: translateY(0);
+}
+
+/* --- Footer hover glow --- */
+.footer a {
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.footer a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.45);
+}
+
+/* --- Footer lift --- */
+.footer a {
+  display: inline-block;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.footer a:hover {
+  transform: translateY(-3px);
+  color: #ffffff;
 }
