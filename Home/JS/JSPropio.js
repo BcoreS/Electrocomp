@@ -19,7 +19,7 @@ fetch("Home/JSON/carousel.json")
 
       div.innerHTML = `
         <img src="${item.img}" class="d-block w-100" alt="${item.title}">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-md-block animated bounceInDown">
           <h5>${item.title}</h5>
           <p>${item.text}</p>
         </div>
