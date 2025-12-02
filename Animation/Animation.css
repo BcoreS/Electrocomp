@@ -145,3 +145,50 @@
   transform: translateY(-3px);
   color: #ffffff;
 }
+
+/* --- Footer underline --- */
+.footer a {
+  position: relative;
+  text-decoration: none;
+}
+
+.footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.footer a:hover::after {
+  width: 100%;
+}
+
+/* ---- Cards: animación de entrada ---- */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-anim {
+  animation: cardFadeIn 0.6s ease forwards;
+}
+
+/* ---- Cards: hover ---- */
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
