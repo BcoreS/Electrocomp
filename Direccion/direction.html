@@ -98,9 +98,10 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="../Direccion/direction.html">Dirección</a>
+              <a class="nav-link" href="../Direccion/direction.html"
+                >Dirección</a
+              >
             </li>
-            
           </ul>
         </div>
       </div>
@@ -139,43 +140,49 @@
 
     <!-- SECCIÓN: Google Maps -->
 
-    
+    <section class="pb-5 pt-1">
+      <div class="container">
+        <!-- Título centrado arriba -->
+        <h2 class="fw-bold text-center mb-4">
+          Ruta más cercana a nuestra tienda
+        </h2>
 
-<section class="pb-5 pt-1">
-  <div class="container">
-    <!-- Título centrado arriba -->
-    <h2 class="fw-bold text-center mb-4">
-      Ruta más cercana a nuestra tienda
-    </h2>
+        <!-- Fila con mapa y clima uno al lado del otro -->
+        <div class="row justify-content-center">
+          <!-- Columna para el mapa (más ancha) -->
+          <div class="col-lg-8 col-md-7 mb-3">
+            <div id="map" style="height: 400px; border-radius: 8px"></div>
+          </div>
 
-    <!-- Fila con mapa y clima uno al lado del otro -->
-    <div class="row justify-content-center">
-      <!-- Columna para el mapa (más ancha) -->
-      <div class="col-lg-8 col-md-7 mb-3">
-        <div id="map" style="height: 400px; border-radius: 8px;"></div>
-      </div>
-
-      <!-- Columna para el clima -->
-      <div class="col-lg-4 col-md-5">
-        <div id="weather" class="card shadow-lg border-0">
-          <div class="card-body text-center">
-            <h4 class="card-title" id="city"></h4>
-            <img id="icon" alt="Icono del clima" style="width:80px;">
-            <p class="card-text" id="description" class="text-muted"></p>
-            <table class="table table-sm table-bordered mt-3">
-              <tbody>
-                <tr><td>Temperatura</td><td id="temp"></td></tr>
-                <tr><td>Humedad</td><td id="humidity"></td></tr>
-                <tr><td>Viento</td><td id="wind"></td></tr>
-              </tbody>
-            </table>
+          <!-- Columna para el clima -->
+          <div class="col-lg-4 col-md-5">
+            <div id="weather" class="card shadow-lg border-0">
+              <div class="card-body text-center">
+                <h4 class="card-title" id="city"></h4>
+                <img id="icon" alt="Icono del clima" style="width: 80px" />
+                <p class="card-text" id="description" class="text-muted"></p>
+                <table class="table table-sm table-bordered mt-3">
+                  <tbody>
+                    <tr>
+                      <td>Temperatura</td>
+                      <td id="temp"></td>
+                    </tr>
+                    <tr>
+                      <td>Humedad</td>
+                      <td id="humidity"></td>
+                    </tr>
+                    <tr>
+                      <td>Viento</td>
+                      <td id="wind"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -207,17 +214,21 @@
         <div class="footer-contact">
           <h4>Contacto</h4>
           <p><i class="fa fa-map-marker"></i> San José, Costa Rica</p>
-          <p><i class="fa fa-phone"></i> +506 8888-8888</p>
-          <p><i class="fa fa-envelope"></i> info@ElectrocompSA.com</p>
+          <p><i class="fa fa-phone"></i> +506 8535-3204</p>
+          <p><i class="fa fa-envelope"></i> gerencia@electrocomp.co.cr</p>
         </div>
 
         <!-- Redes sociales -->
         <div class="footer-links">
           <h4>Contactanos</h4>
           <ul>
-            <li><a href="#">Facebook</a></li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100064511120288"
+                >Facebook</a
+              >
+            </li>
             <li><a href="#">Instagram</a></li>
-            <li><a href="#">Whatsapp</a></li>
+            <li><a href="tel:+50685353204">Whatsapp</a></li>
           </ul>
         </div>
       </div>
@@ -237,8 +248,9 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsiISPbA3re_wpb-jIF8w6SS8EZcH1u0&callback=initMap"
     ></script>
-     <script>
-            scr="https://api.openweathermap.org/data/2.5/weather?lat=10.07200&lon=-84.30977&appid=fcb999651861374dfdcd703b90d25923"
-      </script>
+    <script>
+      scr =
+        "https://api.openweathermap.org/data/2.5/weather?lat=10.07200&lon=-84.30977&appid=fcb999651861374dfdcd703b90d25923";
+    </script>
   </body>
 </html>
